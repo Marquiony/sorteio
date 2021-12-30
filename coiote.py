@@ -31,7 +31,7 @@ def main():
 
     return remove_repetidos()
 
-
+st.subheader("Seus jogos com os números da sorte são:")
 j = 0
 while j < jogada_2:
     y = []
