@@ -1,13 +1,16 @@
 import random
+import streamlit as st
 
-print("***********************************************************")
-print("Bem vindo ao gerador de números da mega da virada do coiote")
-print("***********************************************************")
+st.write(""" 
+# Bem vindo ao gerador de números da mega da virada do coiote
+""")
 
-jogada_1 = int(input("Quantos números você quer jogar em cada jogo? "))
-jogada_2 = int(input("Quantos jogos você quer fazer? "))
+
+st.header("Escolha as configurações do seu jogo")
+
+jogada_1 = st.slider("Quantos números você quer jogar em cada jogo?", 6, 15)
+jogada_2 = st.slider("Quantos jogos você quer fazer?", 1, 20)
 y = []
-j = 0
 lista2 = []
 
 def remove_repetidos():
@@ -28,12 +31,12 @@ def main():
 
     return remove_repetidos()
 
+
+j = 0
 while j < jogada_2:
     y = []
     lista2 = []
-    print(main())
+    st.write(main())
     j += 1
 
-print("se você ganhar, doe 5% a marquiony :)")
-
-input()
+st.write("se você ganhar, doe 5% a marquiony :)")
