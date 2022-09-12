@@ -2,7 +2,7 @@ import random
 import streamlit as st
 
 st.write(""" 
-# Bem vindo ao gerador de números da mega da virada do coiote
+# Bem vindo ao gerador de números da mega sena
 """)
 
 
